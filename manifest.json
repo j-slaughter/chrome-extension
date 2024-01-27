@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "MattBucks",
-    "description": "Earn MattBucks by visiting documentation sites",
+    "description": "Ever wished you could earn MattBucks outside of Codesmith? Now you can! Get rich passively just by learning with this extension.",
     "version": "1.0",
     "action": {
       "default_popup": "popup.html",
@@ -13,6 +13,14 @@
         "48": "images/matt-48.png",
         "128": "images/matt-128.png"
       },
+    "web_accessible_resources": [
+      {
+        "resources": ["images/matt.png"],
+        "matches": [
+            "https://*/*"
+        ]
+      }
+    ],
     "content_scripts": [
         {
         "js": ["scripts/content.js"],
