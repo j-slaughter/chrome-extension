@@ -1,36 +1,34 @@
 {
-    "manifest_version": 3,
-    "name": "MattBucks",
-    "description": "Ever wished you could earn MattBucks outside of Codesmith? Now you can! Get rich passively just by learning with this extension.",
-    "version": "1.0",
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "images/matt-16.png"
-    },
-    "icons": {
-        "16": "images/matt-16.png",
-        "32": "images/matt-32.png",
-        "48": "images/matt-48.png",
-        "128": "images/matt-128.png"
-      },
-    "web_accessible_resources": [
-      {
-        "resources": ["images/matt.png"],
-        "matches": [
-            "https://*/*"
-        ]
-      }
-    ],
-    "content_scripts": [
-        {
-        "js": ["scripts/content.js"],
-        "matches": [
-            "https://developer.chrome.com/docs/extensions/*",
-            "https://developer.chrome.com/docs/webstore/*",
-            "https://developer.mozilla.org/en-US/docs/*",
-            "https://www.w3schools.com/jsref/*",
-            "https://www.codesmith.io/*"
-        ]
-        }
-    ]
-  }
+  "manifest_version": 3,
+  "name": "MattBucks",
+  "description": "Ever find yourself craving MattBucks outside of Codesmith sessions? This is the extension for you! Now, you can get rich passively while learning on your own time.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/matt-16.png"
+  },
+  "icons": {
+    "16": "images/matt-16.png",
+    "32": "images/matt-32.png",
+    "48": "images/matt-48.png",
+    "128": "images/matt-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["images/matt.png"],
+      "matches": ["https://*/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*",
+        "https://developer.mozilla.org/en-US/docs/*",
+        "https://www.w3schools.com/jsref/*",
+        "https://www.codesmith.io/*"
+      ]
+    }
+  ]
+}
